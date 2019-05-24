@@ -46,13 +46,13 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.co">
+                    <a href="{% url 'home' %}">
                          <img src="{% static 'assets/images/logo2.png' %}" alt="Mobirise" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="https://mobirise.co">
-                        MOBIRISE
+                    <a class="navbar-caption text-white display-4" href="{% url 'home' %}">
+                        Jubilant
                     </a>
                 </span>
             </div>
@@ -74,13 +74,15 @@
             </ul>
             <div class="navbar-buttons mbr-section-btn">
                 <a class="btn btn-sm btn-primary display-4" href="https://mobirise.co">
-                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
-                    Try It Now!
+                    <span class="mbri-user mbr-iconfont mbr-iconfont-btn "></span>
+                    Be A Guest!
                 </a>
             </div>
         </div>
     </nav>
 </section>
+
+<br><br>
 
 
     {% block content %}
@@ -160,7 +162,7 @@
                     Contacts
                 </h5>
                 <p class="mbr-text">
-                    <a class="text-primary" href="{% url 'contact_us' %}">Query</a> <br>
+                    <a class="text-primary" href="{% url 'contact_us' %}">Send Query</a> <br>
                     Email: support@mobirise.com
                     <br>Phone: +1 (0) 000 0000 001
                     <br>Fax: +1 (0) 000 0000 002
